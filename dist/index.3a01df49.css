@@ -1,0 +1,34 @@
+body {
+  font: bolder;
+  background-color: #ffedec;
+  font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+#navbar {
+  background-color: #fff;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+#navbar1, #navbar2 {
+  flex-grow: 2;
+  padding: 2rem;
+}
+
+#navbar3 {
+  flex-grow: 2;
+}
+
+#nav1:hover, #nav2:hover, #nav3:hover {
+  color: #d9d9d9;
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */
