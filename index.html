@@ -1,27 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title> Torshawna Chew</title>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title> Torshawna Chew - Portfolio </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond+Open+Sans">
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav>
-        <div id = "navbar">
-            <div id = "nav1">
-                <h2> About </h2>
-            </div>
-            <div id = "nav2">
-                <h2> Works </h2>
-            </div>
-            <div id = "nav3">
-                <h2> Resume </h2>
-            </div>
-        </div>
-    </nav>
-    <div>
-        <h1> Hey I'm Torshawna </h1>
-    </div>
-</body>
-<script type = "module" src = "index.js"></script>
+  </head>
+  <body>
+    <section id = topflex class = "top">
+      <div id = flexitem>
+        <img id = "logo" src = "assets/personalLogo_icon.png" alt = "Personal Logo">
+      </div> 
+      <div id = flexitem1>
+        <h1> TORSHAWNA CHEW </h1>
+      </div>
+    </section>
+    <section class = "tabs sticky">
+      <nav>
+        <a href="index.html"> HOME </a>
+        <a href="about.html"> ABOUT ME </a>
+        <a target = "_blank" href = "assets/Resume_Chew.pdf"> RESUME </a>
+        <a target = "_blank" href = "https://toch6278.wordpress.com"> BLOG </a>
+        <a href="projects.html" class="active"> PROJECTS </a>
+      </nav>
+    </section>
+    <section id = "cover">
+      <div>
+        <h1 id = "phrase1"> mind full of</h1>
+        <h1 id = "phrase2"> CREATIVITY </h1>
+        <img src = "assets/goldLeaves.jpg" alt = "Gold Leaves" id = "heroimg">
+      </div>
+    </section>
+    <section id = "activity">
+      <div>
+        <h2> RECENT WORKS </h2>
+      </div>
+      <div id = "displayflex">
+        <iframe id = "flex1" width = "560" height = "315" src = "assets/Toy_Store.mp4"></iframe>
+        <iframe id = "flex2" width = "560" height = "315" src = "assets/Antique_Store.mp4"></iframe>
+      </div>
+      <p id = "caption"> Animations made at GAOTek Inc. Internship - Summer 2021 </p>
+    </section>
+    <script type="text/javascript" src = "index.js"></script>
+  </body>
 </html>

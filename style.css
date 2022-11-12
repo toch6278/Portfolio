@@ -1,44 +1,414 @@
+
 body
 {
-    background-color: #FFEDEC;
-    font: bolder;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #eae3d8;
+}
+.top
+{
+  background-color: #659c97;
+}
+h1
+{
+  font-size: 7vw;
+  text-align: center;
+  color: #dac4a0;
+  font-family: "Open Sans";
+}
+h2
+{
+  font-size: 5vw;
+  display: inline;
+  margin: 29vw;
+  text-align: center;
+  color: #dac4a0;
+  font-family: "Open Sans";
+}
+nav
+{
+  display:flex;
+  width: 50vw;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px auto 50px calc(100% - 70vw);
+}
+nav a
+{
+  font-size: 20px;
+  padding: 1em;
+  text-align: center;
+}
+.sticky {
+  /* Resource: https://www.w3schools.com/howto/howto_css_sticky_element.asp */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #eae3d8;
+  width: 100%;
+  height: 50%;
+  padding: 0;
+  margin: 0vw;
+}
+a:link
+{
+  display: inline;
+  color: #659c97;
+  font-family: "Open Sans";
+}
+a:visited
+{
+  color: #659c97;
+}
+a:hover
+{
+  color: #659c97;
+}
+#logo
+{
+  padding: 5vw;
+}
+#phrase1
+{
+  color: #398b85;
+  margin-top: 8vw;
+  margin-bottom: -10vw;
+  font-family: "Open Sans";
+  font-size: 5vw;
+}
+#phrase2
+{
+  color: #b38537;
+  font-family: "Open Sans";
+  font-size: 9vw;
+}
+#heroimg
+{
+  background-color: black;
+  opacity: 0.35;
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  bottom: 120px;
+  margin: -23vw 0vw 0vw 0vw;
+  object-position: center;
+}​
+
+#activity
+{
+  text-align: center;
+  margin-left: 20vw;
+}
+#caption
+{
+  text-align: center;
+  margin-top: -100px;
+  margin-bottom: 50px;
+}
+​
+iframe
+{
+  margin: 2vw;
+}
+#profilepic
+{
+  background-color: white;
+  border-radius: 30px;
+  padding: 1em;
+  margin: 4vw;
+  display: flex;
+}
+#profilepic img
+{
+  width: 42vh;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 30px;
+  padding: 1em;
+}
+#ppic1
+{
+  flex-grow: 5;
+}
+#ppic2
+{
+  flex-grow: 1;
+  flex-wrap: wrap;
+  font-family: "EB Garamond";
+}
+ul
+{
+    margin-top: 0;
+}​
+
+#projects img
+{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+​
+.pimg
+{
+  /* div behind image is black and then you just change the opacity of the image */
+  background-color: #659c97;
+  transition: border-radius 0.5s;
+}
+.pimg:hover
+{
+  border-radius: 100px 100px 100px 10px;
+}
+.pimg img{
+  /* write transition on default state */
+  /* only writing transition specificity for opacity  */
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in, border-radius 0.5s;
+  object-position: center;
+  object-fit: cover;
+}
+.pimg:hover img, iframe:hover{
+  /* 50% opaque/transparent */
+  opacity: .5;
+  border: 4px #dac4a0 solid;
+  border-radius: 100px;
 }
 
-h1{
-    font-size: 30px;
+/* Resources: Casey's website code */
+.overlay
+{
+  z-index:1;
+  position: relative !important;
+  height: 87px;
+  width: 100%;
+  margin-left: 5px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #88aeac;
+  top: 1px;
+  position: absolute;
+  top: 50px;
 }
-h2{
-    font-size: 25px;
+.pimg:hover .overlay
+{
+  opacity: 1;
+}
+/* Resources: Casey's website code */
+.overlay h3{
+  display: flex;
+  margin-top: -250px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 23px;
+  color: white;
+  font-size: 2rem;
+}
+.project:hover .overlay {
+  opacity: 1;
+}
+​
+.top img
+{
+  width: 10vw;
+  margin: 10vw;
+}
+.contact
+{
+  background-color: #398b85;
+  border-radius: 30px;
+  padding: 1em;
+  margin: 4vw;
+}
+.contact h2
+{
+  margin: 3vw 4vw;
+}
+.contact p
+{
+  font-family: "Open Sans", sans-serif;
+  margin: 20px;
+  font-size: 2vw;
+  display: inline;
+  margin: 10vw 4vw 0vw 4vw;
+  text-align: center;
+  color: #dac4a0;
+}
+.contact input
+{
+  margin-left: 4vw;
+}
+#displayflex, #flex
+{
+  display: flex;
+  /* display: inline; */
+  /* margin-left: 5vw;  */
+  margin-bottom: 10vw;
+}
+#topflex
+{
+  display: flex;
+  margin-top: 20px;
+}
+#flex1, #flex2
+{
+  flex-grow: 2;
+}
+#flexitem, #flexitem1, #flexitem2, #flexitem3
+{
+  flex-grow: 2;
+}
+​
+/* label
+{
+  font-family: serif;
+  margin: 20px;
+  font-size: 2vw;
+  display: inline;
+  margin-left: 4vw;
+  text-align: center;
+  color: #dac4a0;
+} */
+input
+{
+  border-radius: 10px;
+  background-color: #eae3d8;
+  opacity: 50%;
+  margin-left: 10vw;
+  padding: 5vw;
 }
 
-#navbar
+  #ppic1 img
+  {
+    display:block;
+  }
+​
+  nav a
+  {
+    font-size: 20px;
+  }
+
+  #name
+  {
+    border-radius: 10px;
+    background-color: #eae3d8;
+    width: 20vw;
+    height: 5vh;
+    font-size: 20px;
+    margin-bottom: 2vw;
+  }
+  #note
+  {
+    border-radius: 10px;
+    background-color: #eae3d8;
+    width: 70vw;
+    height: 10vh;
+    font-size: 14px;
+  }
+  .icon
+  {
+    margin: 6vw 0 0 4vw;
+    width: 2vw;
+    height: 4vw;
+    align-items: center;
+  }
+​
+#projectpic
 {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: white; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#projects
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 50vh;
+  grid-column-gap: 50px;
+  grid-row-gap:50px;
+  padding: 5vw;
 }
 
-#navbar1
+/* Resources: Casey's website code */
+.projmodal
 {
-    flex-grow: 2;
-    padding: 2rem;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: RGBA(0,0,0,0.5);
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: 0;
 }
-#navbar2
+.modal{
+  display: none;
+  z-index: 1;
+  width: 500px;
+  height: auto;
+  position: fixed;
+  background-color: white;
+  padding: 50px;
+  top:100px;
+  left: calc(50vw - calc(500px / 2));
+  border-radius: 20px;
+}
+.modal h3
 {
-    flex-grow: 2;
-    padding: 2rem;
+  font-size: 5vw;
+  display: inline;
+  text-align: center;
+  color: #dac4a0;
+  font-family: "Open+Sans";
 }
-#navbar3
+.openmodal
 {
-    flex-grow: 2;
+  display: none;
 }
-#nav1:hover{
-    color: #D9D9D9;
-}
-#nav2:hover{
-    color: #D9D9D9;
-}
-#nav3:hover{
-    color: #D9D9D9;
-}
+​
+/* @media screen and (max-width:801px)
+{
+  #ppic1 img
+  {
+     display:none;
+  }
+​
+  nav a
+  {
+    font-size: 15px;
+  }
+​
+  #projects
+  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "one"
+    "two"
+    "three";
+     margin-left: 25vw;
+  }
+  iframe
+  {
+    margin-left: 25vw;
+  }
+  #name
+  {
+    border-radius: 10px;
+    background-color: #eae3d8;
+    width: 20vw;
+    font-size: 10px;
+  }
+  #note
+  {
+    border-radius: 10px;
+    background-color: #eae3d8;
+    width: 70vw;
+    font-size: 10px;
+  }
+  .icon
+  {
+    margin: 20px;
+    width: 10px;
+   height: 10px;
+    align-items: center;
+  }
+} */
